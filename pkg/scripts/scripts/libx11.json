@@ -1,0 +1,21 @@
+{
+    "name": "libx11",
+    "version": "1.8.9",
+    "license": "MIT AND X11",
+    "open_source": true,
+    "description": "X11 client-side library",
+    "source": "https://xorg.freedesktop.org//releases/individual/lib/libX11-1.8.9.tar.gz",
+    "dependencies": [""],
+    "install": {
+        "cloning": [
+            "curl -O https://xorg.freedesktop.org//releases/individual/lib/libX11-1.8.9.tar.gz"
+        ],
+        "building": [
+            "tar xzf libX11-1.8.9.tar.gz",
+            "cd libX11-1.8.9 && ./configure --prefix=/usr --disable-static --disable-xf86bigfont && sed -i -e 's/ -shared / -Wl,-O1,--as-needed\\0/g' libtool && make"
+        ]
+    },
+    "uninstall": [
+        ""
+    ]
+}

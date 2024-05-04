@@ -1,0 +1,21 @@
+{
+    "name": "git",
+    "version": "2.45.0",
+    "license": "GPL-2.0-only",
+    "open_source": true,
+    "description": "the fast distributed version control system",
+    "source": "https://git-scm.com/",
+    "dependencies": [""],
+    "install": {
+        "cloning": [
+            "curl -O https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.9.5.tar.gz"
+        ],
+        "building": [
+            "tar xzf git-2.9.5.tar.gz",
+            "cd git-2.9.5"
+        ]
+    },
+    "uninstall": [
+        ""
+    ]
+}
