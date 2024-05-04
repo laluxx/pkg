@@ -1,3 +1,23 @@
+// TODO pkg install should not re download the source code
+// if its already present in the src directory maybe
+// the user modified it and simply want to install their modified version
+
+// TODO configuration file fields like:
+// style = plain #vertical, horizontal
+// color-bg = true #false
+// git-logo = G
+// git-color = #112233
+// git-bg color = #090000
+// build-logo = B
+// build-color = #445566
+// build-bg-color = #332222
+
+// TODO Render a tree of dependencies
+// TODO pkg tui
+// TODO each script should have a boolean installed field
+// TODO check and install dependencies
+// TODO option to add install scripts repos
+
 use std::env;
 use std::fs;
 use std::process::Command;

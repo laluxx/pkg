@@ -1,0 +1,20 @@
+{
+    "name": "dmenu",
+    "version": "5.3",
+    "license": "MIT",
+    "open_source": true,
+    "description": "dmenu is a dynamic menu for X, originally designed for dwm",
+    "source": "https://git.suckless.org/dmenu",
+    "dependencies": ["git"],
+    "install": {
+        "cloning": [
+            "git clone https://git.suckless.org/dmenu ~/.config/pkg/src/dmenu"            
+        ],
+        "building": [
+            "cd ~/.config/pkg/src/dmenu && make && cp dmenu dmenu_path dmenu_run ../../bin && make clean"            
+        ]
+    },
+    "uninstall": [
+        "rm -rf ~/.config/pkg/src/dmenu && rm ~/.config/pkg/bin/dmenu && rm ~/.config/pkg/bin/dmenu_path && rm ~/.config/pkg/bin/dmenu_run"
+    ]
+}

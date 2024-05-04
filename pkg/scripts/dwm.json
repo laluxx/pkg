@@ -1,0 +1,20 @@
+{
+    "name": "dwm",
+    "version": "6.5",
+    "license": "MIT",
+    "open_source": true,
+    "description": "dwm is the suckless dynamic window manager for X.",
+    "source": "https://git.suckless.org/dwm",
+    "dependencies": ["git"],
+    "install": {
+        "cloning": [
+            "git clone https://git.suckless.org/dwm ~/.config/pkg/src/dwm"
+        ],
+        "building": [
+            "cd ~/.config/pkg/src/dwm && make && cp dwm ../../bin && make clean"
+        ]
+    },
+    "uninstall": [
+        "rm -rf ~/.config/pkg/src/dwm && rm ~/.config/pkg/bin/dwm"
+    ]
+}
